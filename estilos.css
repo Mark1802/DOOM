@@ -8,11 +8,17 @@ body
   position: absolute;
   color: white;
   left: 45%;
+  font-family: 'Turret Road', cursive;
 }
 
 #JOGAR
 {
-  
+  text-decoration: none;
+}
+
+#JOGAR a
+{
+  text-decoration: none;
 }
 
 #CREDITS
