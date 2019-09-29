@@ -1,0 +1,55 @@
+body
+{
+  background-color: black;
+}
+
+.inicial
+{
+  position: absolute;
+  color: white;
+  left: 45%;
+}
+
+#JOGAR
+{
+  
+}
+
+#CREDITS
+{
+  margin-top: 65px;
+  left: 43%
+}
+
+#INSTRUCTION
+{
+    margin-top: 105px;
+    left: 41.5%
+}
+
+#genius
+{
+  width: 300px;
+  position: relative;
+  top: 0px;
+  left: 38%;
+  animation: flutuando .5s ease-in-out 0s infinite alternate;
+}
+
+#inicial
+{
+  top: 0px;
+  left: 38%;
+}
+
+#genius:hover
+{
+    opacity: 0.4;
+    transition: all 200ms ease-out;
+}
+
+@keyframes flutuando
+{
+  from { top: 0px; }
+  to { top: 30px; }
+}
