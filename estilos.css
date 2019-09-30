@@ -33,6 +33,11 @@ body
     left: 41.5%
 }
 
+#INSTRUCTION:hover, #CREDITS
+{
+  cursor: pointer;
+}
+
 #genius
 {
   width: 300px;
@@ -58,4 +63,36 @@ body
 {
   from { top: 0px; }
   to { top: 30px; }
+}
+
+.bg-modal
+{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(255 ,255 ,255 , 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+transition: all 200ms ease-out;
+}
+
+.lr-modal
+{
+  width: 510px;
+  height: 460px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Turret Road', cursive;
+}
+
+.lr-modal h1
+{
+  position: relative;
+  left: 150px;
 }
