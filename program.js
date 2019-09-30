@@ -1,12 +1,13 @@
 let InstrucaoEl = document.querySelector('#INSTRUCTION');
 let ModalEl = document.querySelector('.bg-modal');
+let CloseEl = document.querySelector('#close');
 
 InstrucaoEl.addEventListener('click', function()
 {
-  ModalEl.style.display = 'flex';
+  ModalEl.classList.add('visible-modal');
 });
 
-ModalEl.addEventListener('click', function()
+CloseEl.addEventListener('click', function()
 {
-    ModalEl.style.display = 'none';
+  ModalEl.classList.remove('visible-modal');
 });

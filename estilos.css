@@ -1,6 +1,7 @@
 body
 {
   background-color: black;
+  overflow-X: hidden;
 }
 
 .inicial
@@ -31,13 +32,13 @@ body
 #CREDITS
 {
   margin-top: 65px;
-  left: 810px;
+  left: 43.5%;
 }
 
 #INSTRUCTION
 {
     margin-top: 105px;
-    left: 800px;
+    left: 42.5%;
 }
 
 #INSTRUCTION:hover, #CREDITS
@@ -80,27 +81,53 @@ body
   position: absolute;
   top: 0px;
   background-color: rgba(255 ,255 ,255 , 0.6);
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .lr-modal
 {
   top: 0px;
   width: 510px;
-  height: 460px;
+  min-height: 300px;
   padding-left: 10px;
   padding-right: 10px;
   background-color: black;
   border-radius: 5px;
   color: white;
   font-family: 'Turret Road', cursive;
+  transition: all 200ms ease-out;
+  transform: translateY(-100px);
 }
 
 .lr-modal h1
 {
   position: relative;
   left: 150px;
+}
+
+#close:hover
+{
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#close
+{
+  position: absolute;
+}
+
+.visible-modal
+{
+  opacity: 1.0;
+  pointer-events: all;
+}
+
+.visible-modal .lr-modal
+{
+  transform: translateY(0);
 }
