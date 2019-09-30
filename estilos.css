@@ -19,18 +19,25 @@ body
 #JOGAR a
 {
   text-decoration: none;
+  color: white;
+}
+
+#JOGAR a:hover, #CREDITS:hover , #INSTRUCTION:hover
+{
+  color: purple;
+  transition: all 200ms ease-out;
 }
 
 #CREDITS
 {
   margin-top: 65px;
-  left: 43%
+  left: 810px;
 }
 
 #INSTRUCTION
 {
     margin-top: 105px;
-    left: 41.5%
+    left: 800px;
 }
 
 #INSTRUCTION:hover, #CREDITS
@@ -43,7 +50,7 @@ body
   width: 300px;
   position: relative;
   top: 0px;
-  left: 38%;
+  left: 40%;
   animation: flutuando .5s ease-in-out 0s infinite alternate;
 }
 
@@ -81,6 +88,7 @@ transition: all 200ms ease-out;
 
 .lr-modal
 {
+  top: 0px;
   width: 510px;
   height: 460px;
   padding-left: 10px;
